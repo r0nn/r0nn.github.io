@@ -22,7 +22,8 @@ task :new_post, :title do |t, args|
   else
     title = get_stdin("Enter a title for your post: ")
   end
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  title_alias = get_stdin("Enter a title alias for your post (to url): ")
+  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title_alias.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -52,7 +53,8 @@ task :new_page, :title do |t, args|
   else
     title = get_stdin("Enter a title for your page: ")
   end
-  filename = "#{title.to_url}.#{new_page_ext}"
+  title_alias = get_stdin("Enter a title alias for your post (to url): ")
+  filename = "#{title_alias.to_url}.#{new_page_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -61,7 +63,7 @@ task :new_page, :title do |t, args|
   open(filename, 'w') do |page|
     page.puts "---"
     page.puts "layout: page"
-    page.puts "permalink: /#{title.to_url}/"
+    page.puts "permalink: /#{title_alias.to_url}/"
     page.puts "title: \"#{title}\""
     page.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     page.puts "tags: [#{tags}]"
