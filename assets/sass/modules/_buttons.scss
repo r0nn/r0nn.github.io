@@ -1,0 +1,67 @@
+/*------------------------------------*\
+	BUTTONS
+\*------------------------------------*/
+
+@if $use-buttons == true {
+
+	.btn {
+		display: inline-block;
+		margin: 0 0 12px;
+		padding: 8px 16px;
+		border-bottom: 3px solid darken($blue, 10%);
+		border-radius: 4px;
+		background: $blue;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-font-smoothing: antialiased;
+
+		&:hover {
+			background: darken($blue, 5%);
+			color: #fff;
+		}
+
+		&:active {
+			border-bottom: 3px solid darken($blue, 20%);
+			background: darken($blue, 10%);
+		}
+	}
+
+	.btn.btn-disabled {
+		border-bottom: 3px solid $grayLight;
+		background: $grayLight;
+		cursor: default;
+		pointer-events: none;
+	}
+
+	.btn.btn-important {
+		border-bottom: 3px solid darken($important, 10%);
+		background: $important;
+
+		&:hover {
+			background: darken($important, 5%);
+			color: #fff;
+		}
+
+		&:active {
+			border-bottom: 3px solid darken($important, 20%);
+			background: darken($important, 10%);
+		}
+	}
+
+	.btn.btn-success {
+		border-bottom: 3px solid darken($success, 10%);
+		background: $success;
+
+		&:hover {
+			background: darken($success, 5%);
+			color: #fff;
+		}
+
+		&:active {
+			border-bottom: 3px solid darken($success, 20%);
+			background: darken($success, 10%);
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+/*------------------------------------*\
+	ALERTS
+\*------------------------------------*/
+
+@if $use-alerts == true {
+
+	.alert {
+		margin: 0 0 12px;
+		padding: 10px;
+		border-radius: 4px;
+		background: $important;
+		color: #fff;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.alert-info {
+		background: $blue;
+	}
+
+	.alert-success {
+		background: $success;
+	}
+
+	.alert-warning {
+		background: $warning;
+	}
+
+}

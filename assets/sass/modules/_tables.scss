@@ -1,0 +1,41 @@
+/*------------------------------------*\
+	TABLES
+\*------------------------------------*/
+
+@if $use-tables == true {
+
+	table th,
+	table td {
+		padding: 8px 16px;
+		border-bottom: 1px solid #ccc;
+		text-align: left;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	table th {
+		border-width: 2px;
+	}
+
+	table tr:last-child td {
+		border-bottom: none;
+	}
+
+	table tr:nth-child(even) {
+		background: #eee;
+	}
+
+	table tbody tr:hover {
+		background: #f9f9f9;
+	}
+
+	table tr.highlight {
+		background: $blue;
+		color: #fff;
+	}
+
+	table tr.highlight:hover {
+		background: lighten($blue, 15%);
+		color: #fff;
+	}
+
+}

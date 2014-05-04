@@ -1,0 +1,54 @@
+/*------------------------------------*\
+	SETTINGS
+\*------------------------------------*/
+
+// Which modules would you like to use?
+// -------------------------
+$use-grid: true;
+
+
+// Typography defaults
+// -------------------------
+$sans: "ff-tisa-sans-web-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
+$altFont: Monaco, Menlo, Consolas, "Courier New", monospace;
+$baseFontFamily: $serif;
+$baseFontSize: 20px;
+$baseLineHeight: 32px;
+
+
+// Grid
+// -------------------------
+$maxWidth: 900px;
+$colGutter: 10px;
+$containerGutter: 50px;
+$base-spacing: 50px;
+
+
+// Default colours
+// -------------------------
+$pageBackground: #fff;
+$textColour: #444444;
+$linkColour: #22A7F0;
+$linkColourHover: darken($linkColour, 25%);
+$main: #22A7F0;
+
+// Alert colours
+// -------------------------
+$important: #BA4D48;
+$success: #478743;
+$warning: #FA9500;
+
+
+// Brand colours
+// -------------------------
+$grayLight: #999;
+$blue: #0088CE;
+
+
+// Device sizes
+// -------------------------
+$screen-xs: 480px; // Extra small screen / phone
+$screen-sm: 768px; // Small screen / tablet
+$screen-md: 992px; // Medium screen / desktop
+$screen-lg: 1200px; // Large screen / wide desktop

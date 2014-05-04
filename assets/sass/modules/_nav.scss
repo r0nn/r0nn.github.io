@@ -1,0 +1,53 @@
+/*------------------------------------*\
+	NAVIGATION
+\*------------------------------------*/
+
+@if $use-nav == true {
+
+	.nav li {
+		list-style: none;
+	}
+
+	.nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	// Nav bar
+	// -------------------------
+
+	.nav-bar li {
+		display: inline-block;
+	}
+
+	.nav-bar li a {
+		margin-right: 10px;
+		border-bottom: 1px solid #eee;
+		color: $linkColour;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: 1px solid #666;
+			color: $linkColourHover;
+		}
+	}
+
+	// Nav list
+	// -------------------------
+
+	.nav-list li {
+		margin-top: 2px;
+	}
+
+	.nav-list li a {
+		border-bottom: 1px solid #eee;
+		color: $linkColour;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: 1px solid #666;
+			color: $linkColourHover;
+		}
+	}
+
+}

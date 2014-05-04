@@ -1,0 +1,76 @@
+/*------------------------------------*\
+	GRID
+	Based on Gridism: https://github.com/cobyism/gridism
+\*------------------------------------*/
+
+@if $use-grid == true {
+
+.grid {
+	clear: both;
+}
+
+.unit {
+	float: left;
+	padding: 10px $colGutter;
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto $base-spacing auto;
+	padding: 0 $containerGutter;
+	max-width: $maxWidth + ($containerGutter * 2);
+}
+
+.show-grid .half, .show-grid .one-quarter, .show-grid  .one-sixth {
+	background: #e9e9e9;
+}
+
+.show-grid .one-third, .show-grid .two-thirds, .show-grid  .one-fifth, .show-grid  .two-fifths {
+	background: #f9f9f9;
+}
+
+.no-gutters {
+	padding: 0!important;
+}
+
+/* Sizes */
+.whole { width: 100%; }
+.half { width: 50%; }
+.one-third { width: 33.3332%; }
+.two-thirds { width: 66.6665%; }
+.one-quarter { width: 25%; }
+.three-quarters { width: 75%; }
+.one-fifth { width: 20%; }
+.two-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.four-fifths { width: 80%; }
+.one-sixth { width: 16.666666667%; }
+.two-sixths { width: 33.333333334%; }
+.four-sixths { width: 66.666666668%; }
+.five-sixths { width: 83.333333335%; }
+
+/* Clearfix */
+.grid { *zoom: 1; }
+.grid:before, .grid:after { display: table; content: ""; line-height: 0; }
+.grid:after { clear: both; }
+
+@media screen and (max-width: $screen-sm) {
+
+	.container {
+		padding: 0 10px;
+	}
+
+	.unit {
+		padding-right: 20px;
+		padding-left: 20px;
+		width: 100% !important;
+	}
+
+	.unit .grid .unit {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+}
+
+}

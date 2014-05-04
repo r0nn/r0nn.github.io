@@ -1,0 +1,102 @@
+/*------------------------------------*\
+	FORMS
+\*------------------------------------*/
+
+@if $use-forms == true {
+
+	// Global
+	// -------------------------
+
+	.form fieldset {
+		margin: 10px 0;
+		padding: 5px;
+		border: 0;
+		font-size: 0.9em;
+	}
+
+	.form input[type="text"],
+	.form textarea,
+	.form input[type="search"],
+	.form input[type="website"],
+	.form input[type="email"] {
+		padding: 8px 10px;
+		width: 50%;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		background: #f9f9f9;
+
+		&:hover, &:focus {
+			outline: 0;
+			background: #ddd;
+		}
+	}
+
+	.form input[type="submit"] {
+		padding: 8px 10px;
+		border: none;
+		border-radius: 4px;
+		background: #666;
+		color: #fff;
+	}
+
+	.form label {
+		float: left;
+		margin: 4px 0 5px 0;
+		width: 20%;
+		font-weight: bold;
+	}
+
+	.form-radio ul {
+		margin: 0 0 0 20%;
+		padding: 0;	
+
+		li {
+			list-style: none;
+		}
+	}
+
+	.form-radio ul li label {
+		display: inline;
+		float: none;
+		width: auto;
+		font-weight: normal;
+	}
+
+	.form-checkbox label {
+		width: 100%;
+	}
+
+	// Contact form
+	// -------------------------
+
+	.form-contact {
+		margin-top: 50px;
+	}
+
+	.form-contact fieldset {
+		padding: 0 0 10px 0;
+		border-bottom: 1px solid #eee;
+	}
+
+	// Responsive styles
+	// -------------------------
+
+	@media screen and (max-width: 700px) {
+		.form label {
+			float: none;
+		}
+
+		.form input[type="text"],
+		.form textarea,
+		.form input[type="search"],
+		.form input[type="website"],
+		.form input[type="email"] {
+			width: 100%;	
+		}
+
+		.form-radio ul {
+			margin: 0;
+		}
+	}
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1, minimal-ui">
+	<meta http-equiv="cleartype" content="on">
+	<title>{{ page.title }} {% if page.title != "Some Notes" %} - Some Notes{% endif %}</title>
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
+	<script type="text/javascript" src="//use.typekit.net/yfz7bff.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="alternate" type="application/rss+xml" href="/feed/" title="Some Notes Feed">
+	<link href="{{ site.url }}{{ page.url }}" rel="canonical">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@ronn_">
+	<meta name="twitter:title" content="{{ page.title }}">
+	{% if page.description %}
+	<meta name="twitter:description" content="{{ page.description }}">
+	{% else %}
+  	<meta name="twitter:description" content="{{ site.description }}">
+  	{% endif %}
+	<meta name="twitter:creator" content="@ronn_">
+	<meta name="twitter:domain" content="52v2.com">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-42561448-1', 'auto');  // Replace with your property ID.
+	ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+
+<div class="container grid">
+<div class="unit four-fifths">
+
+<header class="page-head">
+	<nav class="page-nav">
+		<a href="/" class="page-title">Some Notes</a> <span>/</span>
+		<a href="/about/">About</a> <span>/</span> 
+		<a href="/feed.xml">Feed</a> <span>/</span> 
+		<a href="https://github.com/r0nn">GitHub</a>
+	</nav>
+</header>
+
+{{ content }}
+
+</div>
+</div>
+
+</body>
+</html>

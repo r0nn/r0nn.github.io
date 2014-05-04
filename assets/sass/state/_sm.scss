@@ -1,0 +1,9 @@
+/*------------------------------------*\
+	SMALL SCREEN / TABLET
+\*------------------------------------*/
+
+@media screen and (max-width: $screen-sm) {
+	.is-hidden-phone {
+		display: none;
+	}
+}

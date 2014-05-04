@@ -1,0 +1,35 @@
+/*------------------------------------*\
+	PAGINATE
+\*------------------------------------*/
+
+@if $use-paginate == true {
+
+	.pagination {
+		text-align: center;
+		font-size: 0.8em;
+		padding: 0;
+	}
+
+	.pagination li {
+		display: inline;
+		list-style: none;
+
+	}
+
+	.pagination li a {
+		padding: 4px 8px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		color: #333;
+		text-decoration: none;
+
+		&:hover {
+			background: #ddd;
+		}
+	}
+
+	.pagination li.page-current {
+		padding: 4px 8px;
+	}
+
+}

@@ -1,0 +1,44 @@
+/*------------------------------------*\
+	BASE
+\*------------------------------------*/
+
+// Apply box layout to all elements
+// -------------------------
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// Custom text selection colours
+// -------------------------
+
+::-moz-selection{
+	background: #e1e1e1;
+	text-shadow: none;
+}
+
+::selection {
+	background: #e1e1e1;
+	text-shadow: none;
+}
+
+// Body
+// -------------------------
+
+body {
+	background-color: $pageBackground;
+	color: $textColour;
+	font-size: $baseFontSize;
+	font-family: $baseFontFamily;
+	line-height: $baseLineHeight;
+	font-weight: 300;
+}
+
+@media screen and (max-width: $screen-sm) {
+	body {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}

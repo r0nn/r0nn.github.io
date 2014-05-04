@@ -1,0 +1,32 @@
+/*------------------------------------*\
+	BREADCRUMBS
+\*------------------------------------*/
+
+@if $use-breadcrumbs == true {
+
+	.breadcrumb {
+		font-size: 0.8em;
+		margin-bottom: 10px;
+	}
+
+	.breadcrumb a {
+		margin: 0 5px;
+		text-decoration: none;
+		color: #999;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	.breadcrumb a:hover {
+		color: #333;
+	}
+
+	.breadcrumb strong {
+		margin-left: 5px;
+		font-weight: bold;
+		color: #333;
+	}
+
+}

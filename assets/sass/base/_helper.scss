@@ -1,0 +1,55 @@
+/*-----------------------------------*\
+	HELPER CLASSES
+\*-----------------------------------*/
+
+// Typography helper classes
+// -------------------------
+
+.lead {
+	font-size: 1.17em;
+	line-height: 1.5em;
+}
+
+.light {
+	font-weight: 300!important;
+}
+
+.normal {
+	font-weight: 400!important;
+}
+
+.semibold {
+	font-weight: 600!important;
+}
+
+.bold {
+	font-weight: 800!important;
+}
+
+.em {
+	font-weight: normal!important;
+	font-style: italic!important;
+}
+
+.align-center {
+	text-align: center!important;
+}
+
+.align-right {
+	text-align: right!important;
+}
+
+// Layout
+// -------------------------
+
+.pull-right {
+	float: right!important;
+}
+
+.pull-left {
+	float: left!important;
+}
+
+.push-top {
+	margin-top: $base-spacing;
+}

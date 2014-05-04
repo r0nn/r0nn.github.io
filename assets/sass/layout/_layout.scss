@@ -1,0 +1,25 @@
+/*------------------------------------*\
+	LAYOUT
+\*------------------------------------*/
+
+img {
+	max-width: 100%;
+}
+
+.page-head {
+	margin-bottom: 100px;
+}
+
+.twitter-mention-button {
+	margin-top: 10px;
+}
+
+.list-posts {
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style: none;
+		margin: 0 0 12px 0;
+	}
+}

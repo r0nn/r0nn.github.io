@@ -1,0 +1,165 @@
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+p {
+	margin: 0 0 $baseFontSize;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+	font-family: $sans;
+	font-weight: 300;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	margin: 0 0 0.30em;
+	font-size: 1.8em;
+}
+
+h2 {
+	margin: 1.2em 0 0.83em 0;
+	font-size: 1.4em;
+}
+
+h3 {
+	margin: 0 0 1em;
+	font-size: 1.17em;
+}
+
+h4 {
+	margin: 0 0 1.33em;
+	font-size: 1em;
+}
+
+h5 {
+	margin: 0 0 1.67em;
+	font-size: 0.83em;
+}
+
+.post-date {
+	font-size: 0.8em;
+	color: #c1c1c1;
+	font-weight: 300;
+	font-family: $sans;
+}
+
+.meta {
+	font-size: 0.8em;
+	color: #999;
+	font-weight: 400;
+	font-family: $sans;
+}
+
+hr {
+	border: 0;
+	border-top: 2px solid $main;
+	margin: 1.5em 0;
+	width: 3em;
+}
+
+kbd {
+	padding: .1em .6em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #f3f3f3;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 1px #fff inset;
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 1px #fff inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 1px #fff inset;
+	text-shadow: 0 1px 0 #fff;
+	white-space: nowrap;
+	font-size: .9em;
+}
+
+.highlight {
+	padding: 4px 14px;
+	background-color: #F7F7F9;
+	margin: 0 0 $baseFontSize;
+}
+
+pre {
+	margin: 0 0 $baseFontSize;
+	padding: 5px 15px;
+	background: #F7F7F9;
+}
+
+code {
+	margin: 0;
+	color: #666;
+}
+
+pre, code {
+	font-size: 0.8em;
+	font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+}
+
+p code {
+	font-size: 0.8em;
+}
+
+.gist {
+	margin-bottom: 2em;
+	font-size: 0.7em;
+	line-height: 1.6em;
+}
+
+.gist-meta {
+	display: none;
+}
+
+.gist .highlight {
+	margin: 0;
+}
+
+blockquote {
+	margin: 2em;
+	color: #999;
+	font-style: italic;
+	font-size: 1.0em;
+	text-indent: -10px;
+	font-weight: 300;
+
+	span {
+		display: block;
+		color: #666;
+	}
+}
+
+blockquote p {
+	width: 100%;
+}
+
+ul, ol {
+	display: block;
+	margin: 0 auto 1.5em auto;
+	padding: 0;
+}
+
+dd {
+	margin: 0 0 20px 30px;
+}
+
+.intro {
+	font-style: italic;
+}
+
+
+// Links
+// -------------------------
+
+a {
+	color: $linkColour;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $linkColourHover;
+}
